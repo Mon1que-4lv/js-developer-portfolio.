@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*usar rem é mais flexivel que usar px, <<< exemplo: se mudar fonte*/
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.informations a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.informations a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.informations p {
+    margin: .5rem;
+}
+
+.informations .person {
+    display: flex;
+    align-items: center;
+}
+
+.informations .localizacao {
+    display: flex;
+    align-items: center;
+}
+
+.informations .contato {
+    display: flex;
+    align-items: center;
+}
+
+.informations .email {
+    display: flex;
+    align-items: center;
+}
+
+/*resposividade para caixa header, adequando designer da pagina 
+de acordo com o tamanho da tela, exemplo: celular, tablet, etc.*/
+@media only screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+}

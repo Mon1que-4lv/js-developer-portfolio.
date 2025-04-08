@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif ;
+}
+
+/*url('...'): você coloca o link direto da imagem entre aspas.
+
+background-size: cover: faz a imagem cobrir todo o fundo do elemento.
+
+background-repeat: no-repeat: evita que a imagem fique se repetindo.
+
+background-position: center: centraliza a imagem no fundo.*/
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main {
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid #ffff;
+    border-radius: .5rem;
+}
+
+
+
+
