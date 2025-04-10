@@ -23,6 +23,31 @@ function updateProfileInfo(profileData){
     email.href = `mailto:${profileData.email}`
 }
 
+function updateProfileInfo(profileData){
+    const experience = document.getElementById('profile.exeperience')
+    experience.innerText = profileData.experience
+}
+
+function updateProfileInfo(profileData){
+    const imgHardSkills = document.getElementById('profile.skills.hardSkills')
+    imgHardSkills.innerText = profileData.imgHardSkills
+}
+
+function updateProfileInfo(profileData){
+    const languages = document.getElementById('profile.languages')
+    languages.innerText = profileData.languages
+}
+
+function updateProfileInfo(profileData){
+    const portfolio = document.getElementById('profile.portfolio')
+    portfolio.innerText = profileData.portfolio
+}
+
+function updateProfileInfo(profileData){
+    const cursos = document.getElementById('profile.cursos')
+    cursos.innerText = profileData.cursos
+}
+
 function updateSoftSkills(profileData){
     const softSkills = document.getElementById('profile.skills.softSkills')
 

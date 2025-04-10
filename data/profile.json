@@ -4,24 +4,24 @@
     "person": "Estagiária Front-end na Pluxee",
     "location": "São Paulo, SP" ,
     "contato": "(11) 96473-2185",
-    "email": "moniquealv27gmail.com",
+    "email": "moniquealv27@gmail.com",
     "skills": {
       "hardSkills": [
         {
           "nome": "HTML",
-          "logo": ""
+          "logo": "assets/ico/HTML-icon.svg"
         },
         {
           "nome": "CSS",
-          "logo": ""
+          "logo": "assets/ico/CSS-icon.svg"
         },
         {
           "nome": "JavaScript",
-          "logo": ""
+          "logo": "assets/ico/JS-icon.svg"
         },
         {
           "nome": "Angular",
-          "logo": ""
+          "logo": "assets/ico/Angular-icon.svg"
         }
       ],
       "softSkills": [
@@ -33,7 +33,7 @@
         "Inteligência emocional"
       ]
     },
-    "idiomas": [
+    "languages": [
       {
         "nome": "Português",
         "nivel": "Nativo"
@@ -58,12 +58,12 @@
         },
         "certificados": [
           {
-            "nome": "Formação: HTML CSS iniciante",
+            "nome": "Formação: Aprenda Programação do Zero",
             "link": "https://app.rocketseat.com.br/certificates/8901cfa6-e8e3-4130-8f82-e035b551709e"
           },
           {
-            "nome": "",
-            "link": ""
+            "nome": "Formação: JavaScript Developer",
+            "link": "https://assets.dio.me/kYO_RJxOemGwcK6nD8zTA1tbu-YI5K6Oqz8y1tgfDMI/f:webp/h:320/q:70/w:450/L2NlcnRpZmljYXRlcy9jb3Zlci9LV0pRUE5FUi5qcGc"
           }
         ]
       },
@@ -81,16 +81,26 @@
       {
         "nome": "Crie o seu NFT de Pokémon com Blockchain (DIO)",
         "gitHub": "https://github.com/Mon1que-4lv/js-developer-pokedex",
-        "certificado": ""
+        "certificado": "https://assets.dio.me/b9A57EhoTdc0edDPamlepnwRmxhP0vseXHzd8mSHQ0E/f:webp/h:320/q:70/w:450/L2NlcnRpZmljYXRlcy9jb3Zlci82SEVVRUhVWS5qcGc"
+      },
+      {
+        "nome": "Criando um cartão de visitas online (Rocketseat)",
+        "gitHub": "https://github.com/Mon1que-4lv/agregador-de-links.git",
+        "certificado": "https://app.rocketseat.com.br/certificates/8901cfa6-e8e3-4130-8f82-e035b551709e"
+      },
+      {
+        "nome": "Criando e Estilizando uma Página de Portfólio Profissional (DIO)",
+        "gitHub": "https://github.com/Mon1que-4lv/js-developer-portfolio.git",
+        "certificado": "https://assets.dio.me/OgqHUW-z8UvaL3oaBhNLtX0fjfMknyJ337Mu_nUzEZg/f:webp/h:320/q:70/w:450/L2NlcnRpZmljYXRlcy9jb3Zlci9NSkVaMkw2VC5qcGc"
       }
     ],
     "experiencias": [
       {
         "nome": "Estagiária Front-end",
-        "descricao": "",
+        "descricao": "Estágio Protagonize Tech/ Pluxee",
         "instituicao": "Pluxee",
         "periodo": {
-          "inicio": "02/2025",
+          "inicio": "Fev 2025",
           "fim": "Atualmente"
         }
       }

@@ -26,6 +26,6 @@
     height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(/ico/verifica.svg);
+    background-image: url(assets/ico/verifica.svg);
     margin-right: .5rem;
 }
