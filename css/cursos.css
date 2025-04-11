@@ -1,0 +1,58 @@
+
+.cursos {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos li {
+    margin-bottom: 1rem;
+}
+
+.cursos li .formacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.cursos li .instituicao {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.cursos li .inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.cursos li .fim {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.cursos li .title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+

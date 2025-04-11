@@ -45,12 +45,19 @@ function updateProfileInfo(profileData){
 
 function updateProfileInfo(profileData){
     const cursos = document.getElementById('profile.cursos')
-    cursos.innerText = profileData.cursos
+    
+    
+    cursos.innerHTML = profileData.educacao.map(curso => `
+        <li>
+            <h3 class="title experiencia">${curso.nome}</h3>
+            <p class="period">${curso.periodo.inicio}-${curso.periodo.fim}</p>
+            <p>${curso.descricao}</p>
+            ${curso.certificados?.map(certificado => `<p></p><a href="${certificado.link}" target="_blank">${certificado.nome}</a>`).join('')}
+        </li>`).join('')
 }
 
 function updateSoftSkills(profileData){
     const softSkills = document.getElementById('profile.skills.softSkills')
-
 
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
 }
