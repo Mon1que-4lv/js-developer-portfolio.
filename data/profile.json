@@ -53,7 +53,7 @@
         "descricao": "Aprendizado contínuo na maior plataforma de educação aberta da América Latina.",
         "instituicao": "Digital Innovation One (DIO)",
         "periodo": {
-          "inicio": "mar 2025",
+          "inicio": "Mar 2025",
           "fim": "Atualmente"
         },
         "certificados": [
@@ -70,7 +70,7 @@
       },
       {
         "nome": "Bacharelado em Sistemas de Informação",
-        "descricao": "",
+        "descricao": "Formando profissionais capazes de desenvolver, gerenciar e implementar soluções tecnológicas para problemas organizacionais. O curso combina conhecimentos de computação, gestão e negócios.",
         "instituicao": "Universidade Nove de Julho (Uninove)",
         "periodo": {
           "inicio": "Nov 2023",
@@ -81,18 +81,18 @@
     "portfolio": [
       {
         "nome": "Crie o seu NFT de Pokémon com Blockchain (DIO)",
-        "gitHub": "https://github.com/Mon1que-4lv/js-developer-pokedex",
-        "certificado": "https://assets.dio.me/b9A57EhoTdc0edDPamlepnwRmxhP0vseXHzd8mSHQ0E/f:webp/h:320/q:70/w:450/L2NlcnRpZmljYXRlcy9jb3Zlci82SEVVRUhVWS5qcGc"
+        "url": "https://github.com/Mon1que-4lv/js-developer-pokedex",
+        "git": true
       },
       {
         "nome": "Criando um cartão de visitas online (Rocketseat)",
-        "gitHub": "https://github.com/Mon1que-4lv/agregador-de-links.git",
-        "certificado": "https://app.rocketseat.com.br/certificates/8901cfa6-e8e3-4130-8f82-e035b551709e"
+        "url": "https://github.com/Mon1que-4lv/agregador-de-links.git",
+        "git": true
       },
       {
         "nome": "Criando e Estilizando uma Página de Portfólio Profissional (DIO)",
-        "gitHub": "https://github.com/Mon1que-4lv/js-developer-portfolio.git",
-        "certificado": "https://assets.dio.me/OgqHUW-z8UvaL3oaBhNLtX0fjfMknyJ337Mu_nUzEZg/f:webp/h:320/q:70/w:450/L2NlcnRpZmljYXRlcy9jb3Zlci9NSkVaMkw2VC5qcGc"
+        "url": "https://github.com/Mon1que-4lv/js-developer-portfolio.git",
+        "git": true
       }
     ],
     "experiencias": [
@@ -101,6 +101,7 @@
         "descricao": "Estágio Protagonize Tech/ Pluxee",
         "instituicao": "Pluxee",
         "periodo": {
+          "logo": "assets/ico/calendario-ico.svg", 
           "inicio": "Fev 2025",
           "fim": "Atualmente"
         }

@@ -23,27 +23,31 @@ function updateProfileInfo(profileData){
     email.href = `mailto:${profileData.email}`
 }
 
-function updateProfileInfo(profileData){
+function updateExperience(profileData){
     const experience = document.getElementById('profile.exeperience')
     experience.innerText = profileData.experience
 }
 
-function updateProfileInfo(profileData){
+function updateImg(profileData){
     const imgHardSkills = document.getElementById('profile.skills.hardSkills')
-    imgHardSkills.innerText = profileData.imgHardSkills
+    
+
+    imgHardSkills.innerHTML = profileData.skills.imgHardSkills.map(skill => `<img src="${skill.logo}">${skill.nome}</img>`).join('')
 }
 
-function updateProfileInfo(profileData){
+function updateLanguages(profileData){
     const languages = document.getElementById('profile.languages')
-    languages.innerText = profileData.languages
+    
+
+    languages.innerHTML = profileData.languages.map(language => `<li>${language}-${languages.nivel}</li>`).join('')
 }
 
-function updateProfileInfo(profileData){
+function updatePortfolio(profileData){
     const portfolio = document.getElementById('profile.portfolio')
     portfolio.innerText = profileData.portfolio
 }
 
-function updateProfileInfo(profileData){
+function updateCursos(profileData){
     const cursos = document.getElementById('profile.cursos')
     
     
@@ -52,6 +56,7 @@ function updateProfileInfo(profileData){
             <h3 class="title experiencia">${curso.nome}</h3>
             <p class="period">${curso.periodo.inicio}-${curso.periodo.fim}</p>
             <p>${curso.descricao}</p>
+            <p>${curso.instituicao}</p>
             ${curso.certificados?.map(certificado => `<p></p><a href="${certificado.link}" target="_blank">${certificado.nome}</a>`).join('')}
         </li>`).join('')
 }
@@ -68,5 +73,10 @@ function updateSoftSkills(profileData){
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
     updateSoftSkills(profileData)
+    updateCursos(profileData)
+    updatePortfolio(profileData)
+    updateLanguage(profileData)
+    updateImg(profileData)
+    updateExperience(profileData)
 })()
 
