@@ -34,18 +34,9 @@
       ]
     },
     "languages": [
-      {
-        "nome": "Português",
-        "nivel": "Nativo"
-      },
-      {
-        "nome": "Inglês",
-        "nivel": "Intermediário"
-      },
-      {
-        "nome": "Espanhol",
-        "nivel": "Básico"
-      }
+      "Português BR",
+      "Inglês (intermediário)",
+      "Espanhol (básico)"
     ],
     "educacao": [
       {
@@ -82,17 +73,17 @@
       {
         "nome": "Crie o seu NFT de Pokémon com Blockchain (DIO)",
         "url": "https://github.com/Mon1que-4lv/js-developer-pokedex",
-        "git": true
+        "github": true
       },
       {
         "nome": "Criando um cartão de visitas online (Rocketseat)",
         "url": "https://github.com/Mon1que-4lv/agregador-de-links.git",
-        "git": true
+        "github": true
       },
       {
         "nome": "Criando e Estilizando uma Página de Portfólio Profissional (DIO)",
         "url": "https://github.com/Mon1que-4lv/js-developer-portfolio.git",
-        "git": true
+        "github": true
       }
     ],
     "experiencias": [

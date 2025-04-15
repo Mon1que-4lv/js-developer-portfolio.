@@ -39,12 +39,20 @@ function updateLanguages(profileData){
     const languages = document.getElementById('profile.languages')
     
 
-    languages.innerHTML = profileData.languages.map(language => `<li>${language}-${languages.nivel}</li>`).join('')
+    languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('')
 }
 
 function updatePortfolio(profileData){
     const portfolio = document.getElementById('profile.portfolio')
-    portfolio.innerText = profileData.portfolio
+    portfolio.innerText = profileData.portfolio.map(porfolioItem =>{
+        return  `
+        <li>
+            <span class="github">${portfolioItem.title}</span>
+            <p><a href="${portfolioItem.url}" target="_blank">Clique aqui</a></p>
+        </li>
+    `;
+
+    }).join('')
 }
 
 function updateCursos(profileData){
