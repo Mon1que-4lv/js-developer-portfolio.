@@ -24,15 +24,20 @@ function updateProfileInfo(profileData){
 }
 
 function updateExperience(profileData){
-    const experience = document.getElementById('profile.exeperience')
-    experience.innerText = profileData.experience
+    const experience = document.getElementById('profile.experience')
+
+    experience.innerHTML = profileData.experiencias.map(experience => 
+        `<li>        
+                        <h3 class="title experiencia" >${experience.nome}/ ${experience.instituicao}</h3>
+                        <p class="period"><img src="${experience.periodo.logo}" alt="">${experience.periodo.inicio}-${experience.periodo.fim}</p>
+                        <p>${experience.descricao}</p>
+                    </li> `).join('') ??''
 }
 
-function updateImg(profileData){
-    const imgHardSkills = document.getElementById('profile.skills.hardSkills')
+function updateHardSkills(profileData){
+    const hardSkills = document.getElementById('profile.skills.hardSkills')
     
-
-    imgHardSkills.innerHTML = profileData.skills.imgHardSkills.map(skill => `<img src="${skill.logo}">${skill.nome}</img>`).join('')
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<img src="${skill.logo}">${skill.nome}</img>`).join('')
 }
 
 function updateLanguages(profileData){
@@ -44,15 +49,11 @@ function updateLanguages(profileData){
 
 function updatePortfolio(profileData){
     const portfolio = document.getElementById('profile.portfolio')
-    portfolio.innerText = profileData.portfolio.map(portfolioItem =>{
-        return  `
-        <li>
-            <span class="github">${portfolioItem.title}</span>
+    portfolio.innerHTML = profileData.portfolio.map(portfolioItem =>
+        `<li>
+            <span class="github">${portfolioItem.nome}</span>
             <p><a href="${portfolioItem.url}" target="_blank">Clique aqui</a></p>
-        </li>
-    `;
-
-    }).join('')
+        </li>`).join('')
 }
 
 function updateCursos(profileData){
@@ -84,7 +85,7 @@ function updateSoftSkills(profileData){
     updateCursos(profileData)
     updatePortfolio(profileData)
     updateLanguages(profileData)
-    updateImg(profileData)
+    updateHardSkills(profileData)
     updateExperience(profileData)
 })()
 
