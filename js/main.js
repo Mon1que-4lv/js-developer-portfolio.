@@ -44,7 +44,7 @@ function updateLanguages(profileData){
 
 function updatePortfolio(profileData){
     const portfolio = document.getElementById('profile.portfolio')
-    portfolio.innerText = profileData.portfolio.map(porfolioItem =>{
+    portfolio.innerText = profileData.portfolio.map(portfolioItem =>{
         return  `
         <li>
             <span class="github">${portfolioItem.title}</span>
@@ -65,7 +65,7 @@ function updateCursos(profileData){
             <p class="period">${curso.periodo.inicio}-${curso.periodo.fim}</p>
             <p>${curso.descricao}</p>
             <p>${curso.instituicao}</p>
-            ${curso.certificados?.map(certificado => `<p></p><a href="${certificado.link}" target="_blank">${certificado.nome}</a>`).join('')}
+            ${curso.certificados?.map(certificado => `<p></p><a href="${certificado.link}" target="_blank">${certificado.nome}</a>`).join('')?? ''}
         </li>`).join('')
 }
 
@@ -83,7 +83,7 @@ function updateSoftSkills(profileData){
     updateSoftSkills(profileData)
     updateCursos(profileData)
     updatePortfolio(profileData)
-    updateLanguage(profileData)
+    updateLanguages(profileData)
     updateImg(profileData)
     updateExperience(profileData)
 })()
