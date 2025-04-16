@@ -91,7 +91,7 @@
         "descricao": "Atuo como estagiária em desenvolvimento front-end com foco em Angular. Participo da criação de interfaces responsivas, desenvolvimento de componentes reutilizáveis e integração com APIs.Utilizo tecnologias como JavaScript, HTML, CSS e Git no dia a dia.",
         "instituicao": "Pluxee",
         "periodo": {
-          "logo": "assets/ico/calendario-ico.svg", 
+          "logo": "assets/ico/calendario-icon.svg", 
           "inicio": "Fev 2025",
           "fim": "Atualmente"
         }
